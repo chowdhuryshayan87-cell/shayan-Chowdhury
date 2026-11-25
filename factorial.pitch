@@ -1,0 +1,10 @@
+# flavour: banglish
+# Recursion with banao (def) and ferot (return).
+
+banao factorial(n):
+    jodi n <= 1:
+        ferot 1
+    ferot n * factorial(n - 1)
+
+proti i moddhe porjay(1, 8):
+    dekhao(i, "! =", factorial(i))

@@ -1,0 +1,16 @@
+# flavour: campus
+# Uses the sample 'campus' flavour from ./flavours (run from the project root).
+
+marks = [72, 85, 91, 66, 58]
+announce("Students:", headcount(marks))
+announce("Topper:", topper(marks))
+announce("Backbencher:", backbencher(marks))
+announce("Class average:", approx(totalmarks(marks) / headcount(marks), 1))
+
+grade_a = 0
+each m inside marks:
+    suppose m >= 80:
+        grade_a += 1
+    or_suppose m < 60:
+        announce(m, "needs revision")
+announce("Grade A students:", grade_a)

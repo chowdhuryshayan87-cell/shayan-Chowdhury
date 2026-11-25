@@ -1,0 +1,24 @@
+# flavour: banglish
+# Lists, membership test, indexing, default and keyword arguments.
+
+cart = ["rice", "dal", "fish"]
+prices = [60, 120, 250]
+cart.append("tea")
+prices.append(30)
+
+banao bill(costs, discount=0):
+    amount = jogfol(costs)
+    jodi discount > 0:
+        amount = amount - amount * discount / 100
+    ferot amount
+
+dekhao("Items:", dorgho(cart))
+dekhao("Total:", bill(prices))
+dekhao("With 10% off:", bill(prices, discount=10))
+
+jodi "fish" moddhe cart:
+    dekhao("Fish is in the cart at", prices[2])
+nahole:
+    dekhao("No fish today")
+
+dekhao("Costliest item price:", sobcheye_boro(prices))

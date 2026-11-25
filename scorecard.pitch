@@ -1,0 +1,22 @@
+# flavour: cricket
+# Batting scorecard: lists, renamed built-ins and a for loop.
+
+scores = [45, 12, 78, 0, 33, 101]
+matches = balls(scores)
+runs_scored = tally(scores)
+
+scoreboard("Matches played:", matches)
+scoreboard("Total runs:", runs_scored)
+scoreboard("Average:", roundoff(runs_scored / matches, 2))
+scoreboard("Highest score:", highest(scores))
+scoreboard("Lowest score:", lowest(scores))
+
+face score within ranked(scores):
+    appeal score >= 100:
+        scoreboard(score, "-> century!")
+    recheck score >= 50:
+        scoreboard(score, "-> half century")
+    recheck score == 0:
+        scoreboard(score, "-> duck")
+    notout:
+        scoreboard(score, "-> keep going")

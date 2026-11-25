@@ -1,0 +1,33 @@
+{
+  "description": "Sample user flavour (college life). Lives in ./flavours, not inside the package",
+  "keywords": {
+    "if": "suppose",
+    "elif": "or_suppose",
+    "else": "otherwise_do",
+    "while": "during",
+    "for": "each",
+    "in": "inside",
+    "True": "present",
+    "False": "absent",
+    "None": "nobody",
+    "and": "plus",
+    "or": "either",
+    "not": "never",
+    "def": "define",
+    "return": "submit",
+    "break": "bunk",
+    "continue": "skip",
+    "pass": "relax"
+  },
+  "builtins": {
+    "print": "announce",
+    "input": "enquire",
+    "len": "headcount",
+    "sum": "totalmarks",
+    "max": "topper",
+    "min": "backbencher",
+    "sorted": "rank",
+    "round": "approx",
+    "range": "rollcall"
+  }
+}

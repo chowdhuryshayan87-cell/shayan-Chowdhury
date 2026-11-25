@@ -1,0 +1,7 @@
+# flavour: python
+# The 'python' flavour changes nothing: ordinary keywords and built-ins.
+
+words = ["pitch", "vm", "flavour"]
+for w in words:
+    if len(w) > 2:
+        print(w.upper())

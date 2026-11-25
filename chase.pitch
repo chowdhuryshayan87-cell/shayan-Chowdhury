@@ -1,0 +1,24 @@
+# flavour: cricket
+# Run chase: while loop, for loop, break (retire) and continue (nextball).
+
+target = 30
+score = 0
+over_number = 0
+ball_runs = [1, 0, 4, 2, 6, 1]
+
+innings score < target:
+    over_number += 1
+    over_total = 0
+    face runs within ball_runs:
+        appeal runs == 0:
+            nextball
+        over_total += runs
+        appeal score + over_total >= target:
+            retire
+    score += over_total
+    scoreboard("Over", over_number, "->", score)
+
+appeal score >= target:
+    scoreboard("Target chased in", over_number, "overs")
+notout:
+    scoreboard("Fell short")

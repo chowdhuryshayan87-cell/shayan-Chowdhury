@@ -1,0 +1,23 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "pitch-pvm"
+version = "1.0.0"
+description = "Cricket-flavoured Python dialects with a stack-based bytecode VM"
+readme = "README.md"
+requires-python = ">=3.8"
+
+[project.scripts]
+pitch = "pitch:main"
+
+[tool.setuptools]
+py-modules = ["pitch"]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["pitchvm*"]
+
+[tool.setuptools.package-data]
+pitchvm = ["flavours/*.json"]

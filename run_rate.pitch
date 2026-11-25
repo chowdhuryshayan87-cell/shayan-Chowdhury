@@ -1,0 +1,15 @@
+# flavour: cricket
+# Functions with default arguments, keyword arguments and an early return.
+
+bowl run_rate(runs, overs_bowled=20):
+    deliver runs / overs_bowled
+
+bowl required_rate(target, scored, overs_left):
+    appeal overs_left <= 0:
+        deliver dot
+    deliver (target - scored) / overs_left
+
+scoreboard("Run rate:", run_rate(150))
+scoreboard("Run rate (10 overs):", run_rate(80, overs_bowled=10))
+scoreboard("Required rate:", required_rate(180, 100, 8))
+scoreboard("No overs left:", required_rate(180, 100, 0))

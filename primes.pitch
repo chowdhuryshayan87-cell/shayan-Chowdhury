@@ -1,0 +1,18 @@
+# flavour: banglish
+# Prime numbers up to 30 using thamo (break), cholo (continue) and list methods.
+
+primes = []
+proti n moddhe porjay(2, 31):
+    is_prime = shotti
+    proti d moddhe porjay(2, n):
+        jodi d * d > n:
+            thamo
+        jodi n % d == 0:
+            is_prime = mittha
+            thamo
+    jodi na is_prime:
+        cholo
+    primes.append(n)
+
+dekhao("Primes:", primes)
+dekhao("Count:", dorgho(primes))
